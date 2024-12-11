@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00A3A3;
+  --secondary: #005C73;
+  --accent: #00E5B0;
+  --dark: #0A1A1F;
+  --darker: #050D0F;
+}
+
+body {
+  background-color: var(--darker);
+  color: #E5E5E5;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00E5B0] to-[#00A3A3];
+}
